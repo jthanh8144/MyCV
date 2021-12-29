@@ -1,0 +1,153 @@
+/* Pc */
+@media only screen and (min-width: 1024px) {
+
+}
+
+/* Tablet */
+@media only screen and (max-width: 1023px) and (min-width: 740px) {
+    .about-left {
+        justify-content: flex-start;
+        z-index: 2;
+    }
+
+    .about-left__content {
+        width: 50%;
+        /* align-self: flex-start; */
+    }
+
+    .about-right {
+        justify-content: flex-end;
+        z-index: 1;
+    }
+
+    .project-item__content {
+        flex-wrap: wrap;
+    }
+
+
+    .skills-content__list-horizontal {
+        flex-wrap: wrap;
+    }
+
+    .skills-content__item-horizontal:nth-child(5) {
+        margin: 0;
+    }
+
+    .skills-content__item-horizontal--break {
+        display: block;
+        width: 100%;
+        content: "";
+    }
+}
+
+/* mobile */
+@media only screen and (max-width: 740px) {
+    html {
+        overflow-x: hidden;
+    }
+
+    .header {
+        overflow: hidden;
+        background-color: var(--white-color);
+    }
+
+    .nav {
+        display: block;
+    }
+
+    .mobile-menu__btn {
+        display: block;
+    }
+
+    .col + .col {
+        margin-top: 40px;
+    }
+
+    .about-left__content {
+        z-index: 1;
+    }
+
+    .about-content,
+    .content-section {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .about-left__hi {
+        font-size: 1.6rem;
+        line-height: 1.8rem;
+    }
+
+    .about-left__name {
+        font-size: 4rem;
+        line-height: 4.2rem;
+    }
+
+    .about-left__job {
+        font-size: 2rem;
+    }
+
+    .about-right__img {
+        height: 400px;
+    }
+
+    .project-item__heading,
+    .project-item__content {
+        flex-wrap: wrap;
+    }
+
+    
+}
+
+/* mobile small screen */
+@media only screen and (max-width: 500px) {
+    .about-left__more {
+        display: none;
+    }
+
+    .about-left__link:nth-child(5) {
+        margin: 0;
+    }
+
+    .break-flex {
+        display: block;
+        width: 100%;
+        content: "";
+    }
+
+    .section-heading {
+        font-size: 3rem;
+        line-height: 3.2rem;
+    }
+
+    .project-item__name {
+        font-size: 2.4rem;
+        line-height: 2.6rem;
+    }
+
+    .project-item__language,
+    .project-item__team,
+    .project-item__link {
+        font-size: 1.4rem;
+        line-height: 1.6rem;
+
+    }
+
+    .project-item__description {
+        display: none;
+    }
+
+    .skills-content__heading {
+        font-size: 1.6rem;
+        line-height: 1.8rem;
+    }
+
+    .skills-content__item-vertical {
+        font-size: 1.4rem;
+        line-height: 1.6rem;
+    }
+
+    .more-item {
+        flex-wrap: wrap;
+    }
+}

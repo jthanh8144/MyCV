@@ -30,8 +30,8 @@
                         <img src="./resources/img/jT_free-file (1).png" alt="logo" class="nav-item__logo-img">
                     </a>
                 </li>
-                <li class="nav-item">
-                    <a href="#about" class="nav-item__link">About</a>
+                <li class="nav-item active">
+                    <a href="" class="nav-item__link nav-item__about">About</a>
                 </li>
                 <li class="nav-item">
                     <a href="#project" class="nav-item__link">Project</a>
@@ -55,17 +55,23 @@
     <main class="main">
         <div class="grid wide">
             <section id="about">
-                <div class="about-content row">
-                    <div class="col l-6 m-0 c-0">
+                <div class="about-content row sm-gutter">
+                    <div class="col l-6 m-12 c-12">
                         <div class="about-left">
                             <div class="about-left__content">
                                 <p class="about-left__hi">Hi, I'm </p>
                                 <p class="about-left__name">Vo Van Thanh</p>
                                 <p class="about-left__job">
-                                    I'm a developer and also a semi-professional photographer.
+                                    I'm a
+                                    <span class="typewrite" data-period="2000"
+                                        data-type='[ "Developer.", "Semi-professional Photographer." ]'>
+                                        <span class="wrap"></span>
+                                    </span>
                                 </p>
                                 <p class="about-left__more">
-                                    I won a silver medal at the provincial olympic competition in computer science.<br>
+                                    I won a <span class="silver-medal">silver medal</span> at the provincial olympic
+                                    competition
+                                    in computer science.<br>
                                     Currently, I am studying at Danang University of Technology.<br>
                                     My current GPA is 3.33/4.
                                 </p>
@@ -76,9 +82,11 @@
                                     <a href="https://instagram.com/jThanh8144" class="about-left__link">
                                         <i class="fab fa-instagram about-left__icon"></i>
                                     </a>
-                                    <a href="mailto:thanhvo618@gmail.com" class="about-left__link">
+                                    <a href="mailto:thanhvo618@gmail.com"
+                                        class="about-left__link about-left__link--break">
                                         <i class="far fa-envelope about-left__icon"></i>
                                     </a>
+                                    <br class="about-left__link break-flex">
                                     <a href="https://www.youtube.com/channel/UCgnVJjKMy3_XIasWWJdzcKw"
                                         class="about-left__link">
                                         <i class="fab fa-youtube about-left__icon"></i>
@@ -86,11 +94,15 @@
                                     <a href="https://github.com/jthanh8144" class="about-left__link">
                                         <i class="fab fa-github about-left__icon"></i>
                                     </a>
+                                    <span class="about-left__link phone-btn">
+                                        <i class="fas fa-phone"></i>
+                                        <p class="phone-number">0782378407</p>
+                                    </span>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col l-6 m-0 c-0">
+                    <div class="col l-6 m-12 c-12">
                         <div class="about-right">
                             <img src="./resources/img/bgr.png" alt="bgr" class="about-right__img">
                         </div>
@@ -102,7 +114,34 @@
                 <div class="content-section">
                     <h2 class="section-heading">Project</h2>
                     <div class="project-content">
-
+                        <ul class="project-list row sm-gutter">
+                            <li class="project-item col l-12 m-12 c-12">
+                                <div class="project-item__heading">
+                                    <p class="project-item__name">
+                                        LAN Devices Management
+                                    </p>
+                                    <p class="project-item__time">
+                                        December 2021
+                                    </p>
+                                </div>
+                                <p class="project-item__language">
+                                    Front-end + NodeJS Back-end developer
+                                </p>
+                                <div class="project-item__content">
+                                    <div>
+                                        <p class="project-item__team">Myself</p>
+                                        <p class="project-item__description">
+                                            Real-time performance monitoring, shutdown timer for computers on the LAN
+                                            using C# PC_Heal serivce.
+                                        </p>
+                                    </div>
+                                    <a href="https://github.com/jthanh8144/PBL4_LANDevicesManagement"
+                                        class="project-item__link">
+                                        See more
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </section>
@@ -110,6 +149,9 @@
             <section id="experience">
                 <div class="content-section">
                     <h2 class="section-heading">Experience</h2>
+                    <p class="section-status">
+                        No experience
+                    </p>
                     <div class="experience-content">
 
                     </div>
@@ -133,6 +175,7 @@
                                     <li class="skills-content__item-horizontal">
                                         <i class="fab fa-js-square item-horizontal__icon"></i>
                                     </li>
+                                    <br class="skills-content__item-horizontal skills-content__item-horizontal--break">
                                     <li class="skills-content__item-horizontal">
                                         <i class="fab fa-cuttlefish item-horizontal__icon">++</i>
                                     </li>
@@ -145,7 +188,7 @@
                                 </ul>
                             </div>
                             <div class="col l-4 m-4 c-12">
-                                <div class="skills-content__heading">Framework - library</div>
+                                <div class="skills-content__heading">Framework & library</div>
                                 <ul class="skills-content__list-vertical">
                                     <li class="skills-content__item-vertical">
                                         <i class="far fa-hand-point-right item-vertical__icon"></i>Express JS
@@ -172,41 +215,47 @@
             <section id="photo">
                 <div class="content-section">
                     <h2 class="section-heading">Photo</h2>
-                    <p class="section-status">
-                        After hours of stressful coding, taking pictures is a way for me to clear my mind.<br>
-                        You can see more on my personal instagram 
-                        <a href="https://www.instagram.com/jthanh8144/" class="section-status__link">@jthanh8144</a> 
-                        or my dedicated instagram 
-                        <a href="https://www.instagram.com/jtwork8144/" class="section-status__link">@jtwork8144</a> .
-                    </p>
+                    <div class="row sm-gutter">
+                        <div class="col l-12 m-12 c-12">
+                            <p class="section-status">
+                                After hours of stressful coding, taking pictures is a way for me to clear my mind.<br>
+                                You can see more on my personal instagram
+                                <a href="https://www.instagram.com/jthanh8144/"
+                                    class="section-status__link">@jthanh8144</a>
+                                or my dedicated instagram
+                                <a href="https://www.instagram.com/jtwork8144/"
+                                    class="section-status__link">@jtwork8144</a> .
+                            </p>
+                        </div>
+                    </div>
                     <div class="photo-content">
                         <div class="row sm-gutter photo-container">
-                            <div class="col l-4 m-4 c-6">
+                            <div class="col l-4 m-6 c-12">
                                 <div class="photo-item">
                                     <img src="./resources/img/11.jpg" alt="" class="photo-item__img">
                                 </div>
                             </div>
-                            <div class="col l-4 m-4 c-6">
+                            <div class="col l-4 m-6 c-12">
                                 <div class="photo-item">
                                     <img src="./resources/img/13.jpg" alt="" class="photo-item__img">
                                 </div>
                             </div>
-                            <div class="col l-4 m-4 c-6">
+                            <div class="col l-4 m-6 c-12">
                                 <div class="photo-item">
                                     <img src="./resources/img/12.jpg" alt="" class="photo-item__img">
                                 </div>
                             </div>
-                            <div class="col l-4 m-4 c-6">
+                            <div class="col l-4 m-6 c-12">
                                 <div class="photo-item">
                                     <img src="./resources/img/14.jpg" alt="" class="photo-item__img">
                                 </div>
                             </div>
-                            <div class="col l-4 m-4 c-6">
+                            <div class="col l-4 m-6 c-12">
                                 <div class="photo-item">
                                     <img src="./resources/img/15.jpg" alt="" class="photo-item__img">
                                 </div>
                             </div>
-                            <div class="col l-4 m-4 c-6">
+                            <div class="col l-4 m-6 c-12">
                                 <div class="photo-item">
                                     <img src="./resources/img/16.jpg" alt="" class="photo-item__img">
                                 </div>
@@ -228,26 +277,34 @@
                                 <p class="more-item__text">
                                     College photo album
                                 </p>
-                                <a href="https://drive.google.com/drive/folders/15E9X7FzdHqaIvVDQ7dOVmok2FjJHJK9Y" class="more-item__link">Google Drive</a>
+                                <br class="break-flex">
+                                <a href="https://drive.google.com/drive/folders/15E9X7FzdHqaIvVDQ7dOVmok2FjJHJK9Y"
+                                    class="more-item__link">Google Drive</a>
                             </li>
                             <li class="more-item">
                                 <p class="more-item__text">
                                     High school photo album
                                 </p>
-                                <a href="https://drive.google.com/drive/folders/1dR5xgcVIxLOl3mYPJa8HbJR1dNA1fnko" class="more-item__link">Google Drive</a>
-                                <a href="https://onedrive.live.com/?authkey=%21ADRiY2JrrlsPNkg&id=D2CBB0607AC5FAF%21102&cid=0D2CBB0607AC5FAF" class="more-item__link">OneDrive</a>
+                                <br class="break-flex">
+                                <a href="https://drive.google.com/drive/folders/1dR5xgcVIxLOl3mYPJa8HbJR1dNA1fnko"
+                                    class="more-item__link">Google Drive</a>
+                                <a href="https://onedrive.live.com/?authkey=%21ADRiY2JrrlsPNkg&id=D2CBB0607AC5FAF%21102&cid=0D2CBB0607AC5FAF"
+                                    class="more-item__link">OneDrive</a>
                             </li>
                             <li class="more-item">
                                 <p class="more-item__text">
                                     Tips on windows 10 mobile
                                 </p>
+                                <br class="break-flex">
                                 <a href="https://sites.google.com/view/win10mobile" class="more-item__link">Link</a>
                             </li>
                             <li class="more-item">
                                 <p class="more-item__text">
                                     Study document in DUT
                                 </p>
-                                <a href="https://mega.nz/folder/cVgC0JIb#Xn51VLBkmzT6XXxrKFmUUA" class="more-item__link">Semester 3</a>
+                                <br class="break-flex">
+                                <a href="https://mega.nz/folder/cVgC0JIb#Xn51VLBkmzT6XXxrKFmUUA"
+                                    class="more-item__link">Semester 3</a>
                                 <a href="" class="more-item__link">Semester 4</a>
                             </li>
                         </ul>
@@ -262,6 +319,15 @@
             <p class="footer__text">&copy; 2021 - Made by jThanh8144</p>
         </div>
     </footer>
+
+    <div class="modal">
+        <div class="modal-container">
+            <div class="modal-btn-close">
+                <i class="fas fa-times"></i>
+            </div>
+            <img src="" alt="photo" class="modal-img">
+        </div>
+    </div>
 
     <script src="./resources/js/index.js"></script>
 </body>
