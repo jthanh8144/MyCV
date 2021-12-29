@@ -20,11 +20,10 @@
 
 .nav-item {
     padding: 6px 12px;
-    /* animation: colorLeftToRight ease 1s; */
 }
 
 .nav-item.active .nav-item__link {
-    color: var(--link-hover-color);
+    color: var(--link-color);
 }
 
 .nav-item__logo {
@@ -38,6 +37,7 @@
 .nav-item__link {
     color: var(--text-color);
     text-transform: uppercase;
+    font-weight: 500;
 }
 
 .break-flex {
@@ -95,6 +95,7 @@
 
 .about-left__name {
     margin-top: 5px;
+    font-weight: 500;
     font-size: 6rem;
     line-height: 6rem;
     text-transform: uppercase;
@@ -113,8 +114,12 @@
 }
 
 .silver-medal {
-    cursor: pointer;
     color: var(--link-color);
+}
+
+.silver-medal:hover {
+    cursor: pointer;
+    color: var(--link-hover-color);
 }
 
 .about-left__contact {

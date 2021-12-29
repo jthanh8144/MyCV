@@ -96,7 +96,10 @@
         flex-wrap: wrap;
     }
 
-    
+    .modal-container {
+        width: 500px;
+        min-height: 500px;
+    }
 }
 
 /* mobile small screen */
@@ -149,5 +152,10 @@
 
     .more-item {
         flex-wrap: wrap;
+    }
+
+    .modal-container {
+        width: 380px;
+        min-height: 380px;
     }
 }
