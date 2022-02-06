@@ -2,7 +2,7 @@ const $ = document.querySelector.bind(document);
 const $$ = document.querySelectorAll.bind(document);
 
 let navbar = $('.header');
-let navItem = $$('.nav-item');
+let navItems = $$('.nav-item');
 let navAbout = $('.nav-item__about');
 let about = $('#about');
 let project = $('#project');
@@ -19,7 +19,7 @@ let photoItems = $$('.photo-item__img');
 function reRenderNavActiveItem(i) {
     let currentActive = $('.nav-item.active');
     currentActive.classList.remove('active');
-    navItem[i].classList.add('active');
+    navItems[i].classList.add('active');
 }
 
 window.onscroll = () => {
