@@ -230,16 +230,17 @@
 }
 
 .project-item + .project-item {
-    margin-top: 32px;
+    margin-top: 50px;
 }
 
 .project-item:not(:first-child)::before {
     content: "";
     display: block;
     position: absolute;
-    border-top: 1px solid #737373;
-    width: 100%;
-    top: -14px;
+    border-top: 1px solid rgb(115, 115, 115, .2);
+    width: 80%;
+    right: 10%;
+    top: -20px;
 }
 
 .project-item__heading {
