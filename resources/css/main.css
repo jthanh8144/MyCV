@@ -133,10 +133,6 @@
     color: var(--link-color);
 }
 
-.about-left__link:hover {
-    
-}
-
 .phone-btn {
     cursor: pointer;
     position: relative;
@@ -163,7 +159,7 @@
 }
 
 .phone-number::before {
-    content: "";
+    content: '';
     border-width: 13px 15px;
     border-style: solid;
     border-color: transparent var(--link-color) transparent transparent;
@@ -198,7 +194,7 @@
     text-align: center;
     font-size: 3.5rem;
     line-height: 3.5rem;
-    letter-spacing: .2rem;
+    letter-spacing: 0.2rem;
     text-transform: uppercase;
     font-weight: 600;
     margin-bottom: 40px;
@@ -214,70 +210,67 @@
     color: var(--link-color);
 }
 
-/* project */
-#project {
-
-}
-
-.project-list {
+/* project, experience */
+.project-list,
+.experience-list {
     display: flex;
     flex-direction: column;
 }
 
-.project-item {
+.project-item,
+.experience-item {
     position: relative;
     line-height: 1.8rem;
 }
 
-.project-item + .project-item {
+.project-item + .project-item,
+.experience-item + .experience-item {
     margin-top: 50px;
 }
 
-.project-item:not(:first-child)::before {
-    content: "";
+.project-item:not(:first-child)::before,
+.experience-item:not(:first-child)::before {
+    content: '';
     display: block;
     position: absolute;
-    border-top: 1px solid rgb(115, 115, 115, .2);
+    border-top: 1px solid rgb(115, 115, 115, 0.2);
     width: 80%;
     right: 10%;
     top: -20px;
 }
 
-.project-item__heading {
+.project-item__heading,
+.experience-item__heading {
     display: flex;
     align-items: center;
 }
 
-.project-item__name {
+.project-item__name,
+.experience-item__job {
     margin-right: auto;
     font-size: 3rem;
     font-weight: 500;
     line-height: 3.2rem;
 }
 
-.project-item__time {
-
-}
-
-.project-item__language {
+.project-item__language,
+.experience-item__company {
     margin: 5px 0 16px 0;
 }
 
-.project-item__content {
+.project-item__content,
+.experience-item__content {
     display: flex;
     align-items: flex-end;
     color: #000;
-}
-
-.project-item__team {
-
 }
 
 .project-item__description {
     margin-top: 3px;
 }
 
-.project-item__link {
+.project-item__link,
+.experience-item__link {
     margin-left: auto;
     color: var(--link-color);
 }
@@ -285,10 +278,6 @@
 /* experience */
 
 /* skills */
-#skills {
-
-}
-
 .skills-content__heading {
     text-align: center;
     font-size: 2rem;
@@ -416,7 +405,7 @@
     min-height: 600px;
     background-color: var(--white-color);
     position: relative;
-    animation: growth ease .4s, fadeIn ease .4s;
+    animation: growth ease 0.4s, fadeIn ease 0.4s;
 }
 
 .modal-btn-close {
