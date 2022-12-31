@@ -104,6 +104,10 @@
 
 /* mobile small screen */
 @media only screen and (max-width: 500px) {
+    .mt-3 {
+        margin-top: 0;
+    }
+
     .about-left__more {
         display: none;
     }
