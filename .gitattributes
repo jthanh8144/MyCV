@@ -1,0 +1,10 @@
+* text eol=lf
+*.js text
+*.html text diff=html
+*.css text diff=css
+*.png binary
+*.jpg binary
+*.ttf -text diff
+*.eot -text diff
+*.woff -text diff
+*.woff2 -text diff
