@@ -4,6 +4,7 @@
 *.css text diff=css
 *.png binary
 *.jpg binary
+*.webp binary
 *.ttf -text diff
 *.eot -text diff
 *.woff -text diff

@@ -36,6 +36,10 @@
     padding-right: 0;
   }
 
+  .experience-left__line {
+    height: 110px;
+  }
+
   .photo-wrapper {
     padding: 2.5px;
   }
@@ -180,7 +184,7 @@
   }
 
   .experience-left__line {
-    height: 130px;
+    height: 175px;
     width: 2px;
     margin: 5px 5px 5px 0;
   }
@@ -264,7 +268,7 @@
   }
 
   .experience-left__line {
-    height: 230px;
+    height: 260px;
   }
 
   .skills-content__heading {

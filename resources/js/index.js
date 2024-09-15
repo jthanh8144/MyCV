@@ -181,14 +181,15 @@ $('.modal-container').onclick = (e) => {
 
 // silver medal click
 silverMedal.onclick = () => {
-  let src = './resources/img/silver.jpg';
+  let src = './resources/img/high-resolution/silver.jpg';
   showModal(src);
 };
 
 // photo img click
 Array.from(photoItems).forEach((photoItem) => {
   photoItem.onclick = () => {
-    showModal(photoItem.src);
+    const highResolutionSrc = photoItem.src.replace('low', 'high').replace('webp', 'jpg')
+    showModal(highResolutionSrc);
   };
 });
 
@@ -228,7 +229,7 @@ function randomPhotos() {
     random(0, 3),
   ];
   for (let i = 0; i < photos.length; i++) {
-    photos[i].src = `./resources/img/photo-section/${i + 1}/${numbers[i]}.jpg`;
+    photos[i].src = `./resources/img/low-resolution/photo-section/${i + 1}/${numbers[i]}.webp`;
   }
 }
 
